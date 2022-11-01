@@ -1,0 +1,66 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/d23c413c-5448-5731-ba16-b2998161ee48",
+      "url": "https://www.nytimes.com/2022/10/28/arts/music/jerry-lee-lewis-dead.html",
+      "id": 100000007817104,
+      "asset_id": 100000007817104,
+      "source": "New York Times",
+      "published_date": "2022-10-28",
+      "updated": "2022-10-29 09:27:59",
+      "section": "Arts",
+      "subsection": "Music",
+      "nytdsection": "arts",
+      "adx_keywords": "Deaths (Obituaries);Pop and Rock Music;Country Music;Lewis, Jerry Lee",
+      "column": null,
+      "byline": "By William Grimes",
+      "type": "Article",
+      "title": "Jerry Lee Lewis, a Rock ’n’ Roll Original, Dies at 87",
+      "abstract": "With his pounding piano, his impassioned vocals and his incendiary performing style, Mr. Lewis lived up to his nickname, the Killer.",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Pop and Rock Music",
+        "Country Music"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Lewis, Jerry Lee"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jerry Lee Lewis in 1957. His incendiary performing style captured the essence of rock rebellion.",
+          "copyright": "Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/06/16/obituaries/00lewis_jerry_lee2/merlin_107592586_33db2236-9b00-4c6b-9292-ab058d17b42f-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/16/obituaries/00lewis_jerry_lee2/merlin_107592586_33db2236-9b00-4c6b-9292-ab058d17b42f-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/06/16/obituaries/00lewis_jerry_lee2/merlin_107592586_33db2236-9b00-4c6b-9292-ab058d17b42f-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+
+  ]
+}
