@@ -75,7 +75,7 @@ class ArticleCard extends StatelessWidget {
                 Text(
                   "${section}",
                   style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 14),
+                      fontWeight: FontWeight.bold, fontSize: 18),
                 ),
                 const SizedBox(
                   height: 5,
