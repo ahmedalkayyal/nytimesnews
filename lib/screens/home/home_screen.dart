@@ -5,7 +5,6 @@ import 'package:nytimesnews/screens/home/bloc/home_bloc.dart';
 import 'package:nytimesnews/screens/home/bloc/home_events.dart';
 import 'package:nytimesnews/screens/home/bloc/home_states.dart';
 import 'package:nytimesnews/screens/widgets/article_card.dart';
-import '../../model/my_search.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -31,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.greenAccent,
         title: const Text("NY Times Viewed Articles"),
         actions: [
           Row(
