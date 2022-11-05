@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:nytimesnews/model/multi_media/multi_media.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
 
 
 
@@ -38,56 +38,64 @@ class ArticleCard extends StatelessWidget {
 
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Column(
-        children: [
-          ListTile(
-            title: Text(" ${title}"),
-            subtitle: Flex(
-              direction: Axis.values[1],
-              children: [
-                Text(
-                  "${abstract}",
-                ),
-                Text(
-                  "${publishedDate}",
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ],
+  Widget build(BuildContext context ){
+    return SingleChildScrollView(
+
+      child: GestureDetector(
+        onTap: () {
+          _launchURL(uri);
+        },
+
+        child: Column(
+          children: [
+            Text(" $title"),
+        Flex(
+          direction: Axis.values[1],
+          children: [
+            Text(
+              "$abstract",
             ),
-            leading: Column(
+            Text(
+              "$publishedDate",
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                multiMedia!=null &&
+                multiMedia!.isNotEmpty &&
+                multiMedia![0]!=null &&
+                multiMedia![0]!.mediaMetaData!=null &&
+                multiMedia![0]!.mediaMetaData!.isNotEmpty &&
+                multiMedia![0]!.mediaMetaData![0]!=null &&
+                multiMedia![0]!.mediaMetaData![0]!.url!=null
+                ?
                 Container(
-                  child: Text("$multiMedia" ),
-                )
-                // Container(
-                //   height: 40,
-                //   width: 40,
-                //   child: Image.network(multiMedia![0].toString()),
-                // ),
+                  height: 65,
+                  width: 40,
+                  child: Image.network(multiMedia![0]!.mediaMetaData![0]!.url.toString()),
+                ) : Container(
+                  color: Colors.red,
+                  height: 65,
+                  width: 40,
+                ),
               ],
             ),
-            trailing: Column(
-              children: [
-                Text(
-                  "${section}",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                const SizedBox(
-                  height: 5,
-                ),
-                const Icon(Icons.arrow_forward_ios_rounded),
-              ],
+        Column(
+          children: [
+            Text(
+              "$section",
+              style: const TextStyle(
+                  fontWeight: FontWeight.bold, fontSize: 18),
             ),
-            onTap: () {
-              _launchURL(uri);
-            },
-          ),
-        ],
+          ],
+        ),
+
+          ],
+        ),
       ),
     );
   }

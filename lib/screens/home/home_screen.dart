@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
               IconButton(
                   icon: const Icon(Icons.search),
                   onPressed: () {
-                    showSearch(context: context, delegate: MySearchDelegate());
+                   // showSearch(context: context, delegate: MySearchDelegate());
                   }),
             ],
           ),
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: "${state.data[i]!.title}",
                 abstract: "${state.data[i]!.abstract}",
                 section: "${state.data[i]!.section}",
-                  multiMedia: state.data[i]!.media!.toList(),
+                multiMedia: state.data[i]!.media!.toList(),
 
               );
             });

@@ -8,7 +8,7 @@ class HomeLoading extends HomeStates {}
 
 class HomeLoaded extends HomeStates {
   final List<TestArticle?> data;
-  //final List<TestArticle?> dataOne;
+
 
   HomeLoaded(this.data,);
 }
