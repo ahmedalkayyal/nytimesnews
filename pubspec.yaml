@@ -39,6 +39,8 @@ dependencies:
   url_launcher: ^6.1.6
   iconly:
   flutter_bloc: ^7.0.1
+  cached_network_image:
+  shimmer:
 
 dev_dependencies:
   flutter_test:
