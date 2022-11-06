@@ -23,9 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     _bloc.add(GetHomeData(7));
   }
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
