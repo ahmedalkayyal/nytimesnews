@@ -12,36 +12,34 @@ class APIService {
   Future<BuiltList<TestArticle?>?> fetchArticlesByPeriod(int period) async {
     Map<String, dynamic> parameters = {'api-key': API_KEY};
     Uri uri = Uri.http(
-      _baseUrl, "/svc/mostpopular/v2/viewed/$period.json", parameters,);
+      _baseUrl,
+      "/svc/mostpopular/v2/viewed/$period.json",
+      parameters,
+    );
 
     try {
       var response = await http.get(uri);
 
       if (response.statusCode == 200) {
-        final data = serializers.deserialize(
-            json.decode(response.body)['results'],
-
-            specifiedType: const FullType(
-    BuiltList,
-    [
-    FullType(TestArticle),
-    ],
-    ));
-    if (data != null) {
-    return data as BuiltList<TestArticle>;
-    } else {
-    /// TODO
-    return Future.error("error");
-    }
-    }
-    else{
-    return Future.error("error");
-    }
-
-
-    }
-    catch (err) {
-    throw err.toString();
+        final data =
+            serializers.deserialize(json.decode(response.body)['results'],
+                specifiedType: const FullType(
+                  BuiltList,
+                  [
+                    FullType(TestArticle),
+                  ],
+                ));
+        if (data != null) {
+          return data as BuiltList<TestArticle>;
+        } else {
+          /// TODO
+          return Future.error("error");
+        }
+      } else {
+        return Future.error("error");
+      }
+    } catch (err) {
+      throw err.toString();
     }
   }
 }
