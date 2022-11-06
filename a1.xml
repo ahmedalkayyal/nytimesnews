@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="C:.Users.ASUS.StudioProjects.nytimesnews.test.simple" timestamp="2022-11-06T15:03:57">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.ASUS.StudioProjects.nytimesnews.test.simple" name="simple" time="0.038"/>
+  </testsuite>
+</testsuites>
