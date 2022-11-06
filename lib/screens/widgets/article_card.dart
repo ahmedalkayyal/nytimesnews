@@ -94,13 +94,23 @@ class ArticleCard extends StatelessWidget {
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.01,
                     ),
-                    Container(
-                      height: MediaQuery.of(context).size.height * 0.03,
-                      child: Text(
-                        "$publishedDate",
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontWeight: FontWeight.bold),
-                      ),
+                    Row(
+
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.date_range_rounded,),
+                        SizedBox(width:MediaQuery.of(context).size.width * 0.001,),
+                        Container(
+                        alignment: Alignment.center,
+                          height: MediaQuery.of(context).size.height * 0.03,
+                          child: Text(
+                            "$publishedDate",
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
