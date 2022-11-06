@@ -37,6 +37,10 @@ analyzer ![Pub Publisher](https://img.shields.io/pub/publisher/analyzer)
 
 built_value_generator ![Pub Publisher](https://img.shields.io/pub/publisher/built_value_generator)
 
+junitreport & flutter_test for testing report
+
+
+
 ## 🧐 Features:
 
 
